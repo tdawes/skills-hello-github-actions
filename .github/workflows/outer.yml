@@ -11,7 +11,7 @@ on:
 jobs:
   # Get the current step to only run the main job when the learner is on the same step.
   run:
-    uses: ./.github.inner.yml
+    uses: ./.github/inner.yml
     with:
       variable: |
         ${{ matrix.values }}
